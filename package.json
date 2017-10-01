@@ -1,0 +1,26 @@
+{
+  "name": "tworme",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeturckheim/tworme.git"
+  },
+  "author": "vdeturckheim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdeturckheim/tworme/issues"
+  },
+  "homepage": "https://github.com/vdeturckheim/tworme#readme",
+  "dependencies": {
+    "joi": "^11.1.1",
+    "knex": "^0.13.0",
+    "pg": "^7.3.0",
+    "split-camelcase": "^1.0.1",
+    "sqlite3": "^3.1.13"
+  }
+}
