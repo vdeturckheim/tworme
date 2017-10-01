@@ -31,15 +31,13 @@ const User = class extends Model.getBaseClass('User', Schema) {
 
 (async () => {
 
-    await User.init()
+    for (let i = 0; i < 1000; ++i) {
 
-    const l = new User('bb');
-    console.log(l);
+        const l = new User('cc');
+        //await l.save();
+    }
 
-    await l.save();
-
-
-    console.log(await User.findByValue(50));
+    console.log(await User.findIdByNameAndByValue('cc', 50));
 })();
 
 
