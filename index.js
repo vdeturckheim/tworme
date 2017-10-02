@@ -10,7 +10,8 @@ Model.setUpConnection({
 
 const Schema = {
     name: 'string',
-    value: 'integer'
+    value: 'integer',
+    age: 'integer'
 };
 
 const User = class extends Model.getBaseClass('User', Schema) {
