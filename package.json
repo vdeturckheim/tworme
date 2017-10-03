@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -Lc -t 100 -a code"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/vdeturckheim/tworme#readme",
   "dependencies": {
+    "code": "^5.1.0",
     "diff-json": "^0.1.11",
     "joi": "^11.1.1",
     "knex": "^0.13.0",
+    "lab": "^14.3.1",
     "pg": "^7.3.0",
     "split-camelcase": "^1.0.1",
     "sqlite3": "^3.1.13"

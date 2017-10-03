@@ -9,7 +9,9 @@ Model.setUpConnection({
 });
 
 const Schema = {
-    name: 'string',
+    name: {
+        type: 'string'
+    },
     value: 'integer',
     age: 'integer'
 };
@@ -32,14 +34,14 @@ const User = class extends Model.getBaseClass('User', Schema) {
 
 (async () => {
 
-    for (let i = 0; i < 10; ++i) {
+    for (let i = 0; i < 120; ++i) {
 
         const l = new User('cc');
-        await l.save();
-        console.log(i);
+        // await l.save();
+        // console.log(i);
     }
 
-    console.log(await User.findIdByNameAndByValue('cc', 55));
+    console.log(await User.findByName('cc'));
 })();
 
 
