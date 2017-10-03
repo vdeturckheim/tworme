@@ -1,5 +1,5 @@
 'use strict';
-const Model = require('./lib/model');
+const Model = require('./lib');
 
 Model.setUpConnection({
     client: 'sqlite3',
