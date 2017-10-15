@@ -1,5 +1,5 @@
 'use strict';
-const Model = require('./lib');
+const Model = require('../lib');
 
 Model.setUpConnection({
     client: 'sqlite3',
@@ -37,8 +37,8 @@ const User = class extends Model.getBaseClass('User', Schema) {
     for (let i = 0; i < 120; ++i) {
 
         const l = new User('cc');
-        // await l.save();
-        // console.log(i);
+        await l.save();
+        console.log(i);
     }
 
     console.log(await User.findByName('cc'));
